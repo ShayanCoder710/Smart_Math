@@ -26,13 +26,13 @@ QGroupBox::title {
     subcontrol-origin: margin;
     subcontrol-position: top left;
     padding: 2px 10px;
-    background-color: #0f3460;
+    background-color: #0a2647;
     border-radius: 4px;
-    color: #e94560;
+    color: #ff8a9b;
 }
 QPushButton {
     background-color: #0f3460;
-    color: #e0e0e0;
+    color: #000000;
     border: 1px solid #2d2d4e;
     border-radius: 6px;
     padding: 10px 18px;
@@ -56,7 +56,7 @@ QPushButton#danger:hover {
 QPushButton#accent {
     background-color: #e94560;
     border-color: #e94560;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
 }
 QPushButton#accent:hover {
@@ -73,6 +73,9 @@ QLineEdit {
 }
 QLineEdit:focus {
     border-color: #e94560;
+}
+QLineEdit::placeholder {
+    color: #6c7a9a;
 }
 QLabel {
     color: #c0c0d0;
@@ -92,8 +95,8 @@ QLabel#result {
     min-height: 20px;
 }
 QLabel#subtitle {
-    color: #8888aa;
-    font: 11px 'Segoe UI';
+    color: #a0b0d0;
+    font: 12px 'Segoe UI';
 }
 QComboBox {
     background-color: #0f3460;
@@ -603,7 +606,7 @@ class CalculatorDialog(QDialog):
                 btn.setObjectName("danger")
             else:
                 btn.setStyleSheet(
-                    "QPushButton { background-color: #1a1a2e; color: #e0e0e0; border: 1px solid #2d2d4e; "
+                    "QPushButton { background-color: #1a1a2e; color: #000000; border: 1px solid #2d2d4e; "
                     "border-radius: 6px; font: 16px 'Segoe UI'; }"
                     "QPushButton:hover { background-color: #0f3460; border-color: #e94560; }"
                 )
@@ -770,7 +773,7 @@ class MainWindow(QMainWindow):
         about_btn = QPushButton("About")
         about_btn.clicked.connect(lambda: AboutDialog(self).exec_())
         about_btn.setStyleSheet(
-            "QPushButton { background-color: #0f3460; color: #e0e0e0; border: 1px solid #2d2d4e; "
+            "QPushButton { background-color: #0f3460; color: #000000; border: 1px solid #2d2d4e; "
             "border-radius: 6px; padding: 10px 18px; font: 13px 'Segoe UI'; }"
             "QPushButton:hover { background-color: #1a4a8a; border-color: #e94560; }"
         )
