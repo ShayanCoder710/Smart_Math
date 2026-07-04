@@ -668,7 +668,7 @@ class AboutDialog(QDialog):
         title.setAlignment(Qt.AlignCenter)
         layout.addWidget(title)
         info = QLabel(
-            "Developer: Seyyed Shayan Seyyedi\n"
+            "Developer: Shayan Ghadamian\n"
             "Language: Python + PyQt5\n"
             "Purpose: Multi-purpose mathematical calculator\n"
             "Features: Algebra, Geometry, Trigonometry,\n"
